@@ -1,0 +1,61 @@
+.link {
+  display: flex;
+  border-bottom: 1px solid #dfdfde;
+}
+
+.link-active {
+  composes: link;
+  background: #f4f4f4;
+  transition: background 0.25s linear;
+}
+
+.link-active:hover, .link-active:focus {
+  background: #fff;
+}
+
+.link-active :global(.icon) {
+  transition: transform 0.25s ease-out;
+}
+
+.link-active:hover :global(.icon), .link-active:focus :global(.icon) {
+  transform: scale(1.1);
+}
+
+.link-selected {
+  composes: link;
+  background: #ffece9;
+  cursor: default;
+  transition: background 0.25s linear;
+}
+
+.link-selected :global(.icon) {
+  transform: scale(1.1);
+}
+
+.link-selected :global(.background) {
+  fill: #ffc6bd;
+}
+
+.wrapper {
+  display: flex;
+  width: 9.2rem;
+  height: 7.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: block;
+  font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #53524e;
+  line-height: 7.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+:global(.label-expanded) {
+  width: 0;
+  transition: width 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  will-change: width;
+}
