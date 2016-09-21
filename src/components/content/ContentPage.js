@@ -14,7 +14,7 @@ const ContentPage = () => (
       <section className={styles['content-section']}>
         <h2 className={styles['secondary-header']}>Check it out!</h2>
         <ul className={styles['social-links-list']}>
-          <li>Check my other projects on <a className={styles['text-link']} target="_blank" href="https://github.com/blurbyte">Github</a></li>
+          <li>Check my other projects on <a className={styles['text-link']} target="_blank" href="https://github.com/blurbyte">GitHub</a></li>
           <li>Contact me on <a className={styles['text-link']} target="_blank" href="https://twitter.com/blurbyte">Twitter</a></li>
           <li>Visit <a className={styles['text-link']} target="_blank" href="http://blurbyte.com/">blurbyte.com</a></li>
         </ul>

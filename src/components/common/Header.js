@@ -8,7 +8,7 @@ const styles = require('./Header.css');
 const Header = () => (
   <header className={styles.banner} role="banner">
     <span className={styles.logo}><BlurbyteLogo /></span>
-    <p className={styles.description}>React SVG Icons</p>
+    <p className={styles.description}>React Menu Animations</p>
   </header>
 );
 
