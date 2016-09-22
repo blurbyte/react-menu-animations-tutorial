@@ -11,22 +11,22 @@ class SideMenuContainer extends React.Component {
       menuExpanded: false
     };
 
-    this.onLinkClick = this.onLinkClick.bind(this);
-    this.onHamburgerClick = this.onHamburgerClick.bind(this);
+    this.selectCategory = this.selectCategory.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  onLinkClick(e, label) {
+  selectCategory(e, label) {
     e.preventDefault();
     this.setState(Object.assign(this.state, { selectedCategory: label }));
   }
 
-  onHamburgerClick() {
+  toggleMenu() {
     this.setState(Object.assign(this.state, { menuExpanded: !this.state.menuExpanded }));
   }
 
   render() {
     return (
-      <SideMenu onLinkClick={this.onLinkClick} onHamburgerClick={this.onHamburgerClick} selectedCategory={this.state.selectedCategory} menuExpanded={this.state.menuExpanded} />
+      <SideMenu onLinkClick={this.selectCategory} onHamburgerClick={this.toggleMenu} selectedCategory={this.state.selectedCategory} menuExpanded={this.state.menuExpanded} />
     );
   }
 }
