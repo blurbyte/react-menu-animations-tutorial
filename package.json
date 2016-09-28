@@ -1,7 +1,7 @@
 {
   "name": "react-quickstart",
   "version": "1.0.0",
-  "description": "React starter kit for single page web applications.",
+  "description": "Simple CSS React Menu animations tutorial.",
   "scripts": {
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message remove-dist",
@@ -25,7 +25,8 @@
     "react",
     "css-modules",
     "svg",
-    "icons"
+    "icons",
+    "animations"
   ],
   "author": "blurbyte",
   "license": "MIT",
