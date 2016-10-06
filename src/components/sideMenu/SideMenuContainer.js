@@ -1,3 +1,4 @@
+/*eslint-disable react/no-set-state*/
 import React from 'react';
 
 //presentational component

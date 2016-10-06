@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 
 //icon
-import {HamburgerIcon} from './Icons';
+import {HamburgerIcon} from '../common/Icons';
 
 const styles = require('./HamburgerButton.css');
 
